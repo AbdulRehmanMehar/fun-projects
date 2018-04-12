@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pick It!</title>
+	<meta name="author" content="Abdul Rehman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	  <a class="navbar-brand" href="/">PickIt!</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <form class="form-inline my-2 my-lg-0 ml-auto">
+	      <input class="form-control mr-sm-2" type="search" id="srchArea" placeholder="HEX to RGB" title="Enter HEX to Convert into RGB">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="cnvrt">Convert</button>
+	    </form>
+	  </div>
+	</nav>
+	<br><br>
+	<div class="container-fluid">
+
+		<div class="text-center mt-4 jumbotron">
+			<h3>Welcome to PickIt!</h3>
+			<h5>Please click color to copy</h5>
+		</div>
+		
+		<div class="row mt-4 mb-4">
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#2980b9</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#2c3e50</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#27ae60</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#8e44ad</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#CF000F</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#64DDBB</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#F04903</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#E01931</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #3D8EB9</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #D2D7D3</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #282830</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#249991</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#E67E22</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#8e44ad</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d35400</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f1c40f</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #a2b9bc</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b2ad7f</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#878f99</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#6b5b95</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #6b5b95</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#feb236</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d64161</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ff7b25</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #d6cbd3</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#eca1a6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#bdcebe</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ada397</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #d5e1df</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#e3eaa7</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b5e7a0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#86af49</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #b9936c</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#dac292</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#e6e2d3</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c4b7a6</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #3e4444</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#82b74b</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#405d27</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c1946a</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #92a8d1</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#034f84</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f7cac9</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f7786b</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #deeaee</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b1cbbb</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#eea29a</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c94c4c</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #d5f4e6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#80ced6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#fefbd8</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#618685</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #ffef96</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#50394c</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b2b2b2</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f4e1d2</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #fefbd8</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#618685</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#36486b</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#4040a1</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #b2b2b2</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f4e1d2</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f18973</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#bc5a45</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #f0f0f0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c5d5c5</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#9fa9a3</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#e3e0cc</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #eaece5</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b2c2bf</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c0ded9</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#3b3a30</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #e4d1d1</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b9b0b0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d9ecd0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#77a8a8</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #f0efef</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ddeedd</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c2d4dd</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b0aac0</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #c8c3cc</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#563f46</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#8ca3a3</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#484f4f</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #e0e2e4</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c6bcb6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#96897f</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#625750</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #7e4a35</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#cab577</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#dbceb0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#838060</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #bbab9b</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#8b6f47</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d4ac6e</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#4f3222</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #686256</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c1502e</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#587e76</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#a96e5b</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #454140</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#bd5734</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#a79e84</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#7a3b2e</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #bccad6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#8d9db6</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#667292</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f1e3dd</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #cfe0e8</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b7d7e8</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#87bdd8</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#daebe8</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #fbefcc</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f9ccac</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f4a688</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#e0876a</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #fff2df</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d9ad7c</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#a2836e</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#674d3c</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #f9d5e5</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#eeac99</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#e06377</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#c83349</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #5b9aa0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d6d4e0</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#b8a9c9</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#622569</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #96ceb4</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ffeead</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ffcc5c</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#ff6f69</span>
+			</div>
+
+			<div class="col-md-3 color-box">
+				<span class="colorhex"> #588c7e</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f2e394</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#f2ae72</span>
+			</div>
+			<div class="col-md-3 color-box">
+				<span class="colorhex">#d96459</span>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy; PickIt! All rights reserved.</p>
+		<div class="alert"></div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

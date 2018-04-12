@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Stylesheet - The Ultimate CSS Generator">
+  <meta name="keywords" content="CSS,Stylesheet,Styles">
+  <meta name="author" content="Abdul Rehman">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/title.png">
+	<title>Stylesheet</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	  <a class="navbar-brand" href="/" title="The Ultimate CSS Generator">Stylesheet</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="/">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="gradient-generator.html">Gradient Generator</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="border-radius-generator.html">Border-Radius Generator</a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="box-shadow-generator.html">Box-Shadow Generator</a>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item">
+	        <a class="nav-link" href="http://pickit.cf" target="_blank" title="Pick colors for your website">Pick It!</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="main">
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-10">
+					<div id="box">
+						<textarea cols="70" rows="7" readonly></textarea>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="inputs" id="boxShadow">
+						<b>Horizontal Offset:</b> <input type="number" id="hOffset" value="0" title="Positive Value for Right Side and Negative Value for Left Side"><br>
+						<b>Vertical Offset:</b> <input type="number" id="vOffset" value="0" title="Positive Value for Down Side and Negative Value for Up Side"><br>
+						<b>Blur:</b> <input type="number" id="blur" value="0" title="Enter Value"><br>
+						<b>Spread:</b> <input type="number" id="spread" value="0" title="Enter Value"><br>
+						<b>Color (<a href="http://pickit.cf" target="_blank">Select Here</a>):</b> <input type="text" id="color" placeholder="HEX Value" title="Enter HEX Value"><br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="foot">
+			<span>&copy; Stylesheet. All rights reserved!</span>
+			<span>A fun project by <a href="http://developermehar.cf">Abdul Rehman</a></span>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
